@@ -1,11 +1,22 @@
 import express from 'express';
+import path from 'path';
+import routes from './routes';
+import cors from 'cors';
 
 const app = express();
 
-app.get('/users', (request, response) => {
-  console.log('Listagem de usuários');
+app.use(cors())
+app.use(express.json());
+app.use(routes);
 
-  response.json(["Hello  World", "Chrystian Ferreira"]);
-})
+app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
+// app.get('/abc', (request, response) => {
+//   console.log("CONSOLELOG");
+
+//   response.json([
+//     'HELLO'
+//   ]);
+// });
+
 
 app.listen(3333);
