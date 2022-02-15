@@ -53,19 +53,3 @@ $ yarn install
 # Inicie a aplicação
 $ yarn start
 ```
-
-```
-# Clone o repositório
-$ git clone https://github.com/DanielObara/NLW-1.0
-
-# Acesse a pasta do front-end mobile
-$ cd NLW01/mobile
-
-# Instale as dependências
-$ yarn install
-
-# Inicie a aplicação
-$ yarn start
-
-# Em seguida, escaneie o QR Code com o aplicativo do Expo pra acessar o aplicativo no seu celular.
-```
